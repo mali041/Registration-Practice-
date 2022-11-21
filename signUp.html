@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link href="./signup.css" rel="stylesheet"  type="text/css"/>
+    <script src="./signup.js"></script>
+</head>
+<body>
+    <main id="rapier">
+        <form onsubmit="return false"> 
+            <h1> Register Form </h1>
+            <img class="center" src="./images/user_registration.png" alt="Image don't Load"/>
+            <input type="text" id="fName" placeholder="First Name" class="center" required/>
+            <input type="text" id="lName" placeholder="Last Name" class="center" required/>
+            <input type="email" id="email" placeholder="Email" class="center" required/>
+            <input type="password" id="password" placeholder="Password" class="center" required/>
+            <input type="date" id="date" placeholder="mm/dd/yyyy" class="center" required/>
+            <div class="radioButton">
+                <input type="radio" id="male" name="gender" value="MALE">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="FEMALE">
+                <label for="female">Female</label> 
+            </div>
+            <input type="number" id="pnumber" placeholder="Phone No" class="center" required/>
+            <textarea class="center" id="address" placeholder="Address" id="address"></textarea>
+            <button class="center" onclick="Submit()"> SIGN UP</button>
+            <h4>Already have an account ? <a href="./signIn.html"> SignIn </a>  </h4>
+        </form> 
+        <div class="displayInfo">
+            <h1> Your Profile </h1>
+            <h2> Full Name: <span id="fullName"></span> </h2>
+            <h2> Email: <span id="rEmail"></span> </h2>
+            <h2>Password: <span id="rPassword"></span> </h2>
+            <h2> Gender: <span id="rGender"></span> </h2>
+            <h2>Date of Birth: <span id="rDate"></span> </h2> 
+            <h2>Phone No: <span id="rPNumber"></span> </h2> 
+            <h2> Address: <span id="rAddress"></span> </h2> 
+        </div>
+    </main>
+</body>
+</html>
